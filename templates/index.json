@@ -12,9 +12,16 @@
         "soft_background": false,
         "show_view_all": true
       }
+    },
+    "16320041787568bad5": {
+      "type": "page",
+      "settings": {
+        "page": "contact"
+      }
     }
   },
   "order": [
-    "1632003809ca094309"
+    "1632003809ca094309",
+    "16320041787568bad5"
   ]
 }
