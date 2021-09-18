@@ -4,8 +4,8 @@
     "theme_name": "Virtue",
     "theme_version": "1.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
-    "theme_support_url": "https:\/\/kntx.atlassian.net\/servicedesk\/customer\/portal\/1\/topic\/623353a0-11d8-47cd-bb13-1f17791f2988"
+    "theme_documentation_url": "https:\/\/kntx.atlassian.net\/servicedesk\/customer\/portal\/1\/topic\/623353a0-11d8-47cd-bb13-1f17791f2988",
+    "theme_support_url": "https:\/\/kntx.atlassian.net\/servicedesk\/"
   },
   {
     "name": "t:settings_schema.colors.name",
