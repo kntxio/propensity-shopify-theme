@@ -1,13 +1,13 @@
 {
   "sections": {
-    "163201211407184009": {
-      "type": "page",
+    "1632049774f5de9497": {
+      "type": "tailwind-test",
       "settings": {
-        "page": ""
+        "heading": "Tailwind"
       }
     }
   },
   "order": [
-    "163201211407184009"
+    "1632049774f5de9497"
   ]
 }
