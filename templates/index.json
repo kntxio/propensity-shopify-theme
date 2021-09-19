@@ -3,7 +3,10 @@
     "1632049774f5de9497": {
       "type": "tailwind-test",
       "settings": {
-        "heading": "Tailwind"
+        "title": "Our showroom",
+        "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.<\/p>",
+        "layout": "imageleft",
+        "google_address": ""
       }
     }
   },
