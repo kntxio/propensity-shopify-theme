@@ -32,20 +32,115 @@
 
 {% schema %}
 {
-  "name": "Tailwind Test",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "default": "Tailwind",
-      "label": "Tailwind"
-    }
-  ],
-  "presets": [
-	{
-      "name": "Tailwind Test"
-    }
-  ]
+	"name": "Tailwind Test",
+	"tag": "section",
+	"class": "tailwindtest",
+	"settings": [
+	  {
+		"type": "header",
+		"content": "Content"
+	  },
+	  {
+		"type": "text",
+		"id": "title",
+		"label": "Title",
+		"default": "Our showroom"
+	  },
+	  {
+		"type": "richtext",
+		"id": "description",
+		"label": "Description",
+		"default": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.</p>"
+	  },
+	  {
+		"type": "select",
+		"id": "layout",
+        "label": "Layout",
+		"default": "imageleft",
+        "options": [
+		  {
+			"value": "map-left",
+			"label": "Map Left"
+		  },
+		  {
+			"value": "mapright",
+			"label": "Map Right"
+		  },
+		  {
+			"value": "imageleft",
+			"label": "Image Left"
+		  },
+		  {
+			"value": "imageright",
+			"label": "Image Right"
+		  },
+	 	  {
+			"value": "simple",
+			"label": "Simple"
+		  }
+		]
+	  },
+	  {
+		"type": "header",
+		"content": "Google Map Settings"
+	  },
+	  {
+  		"type": "textarea",
+  		"id": "google_address",
+  		"label": "Google maps address"
+	  }
+	],
+ 	"max_blocks": 10,
+	"blocks": [
+	  {
+		"type": "contentblock",
+		"name": "Content",
+		"settings": [
+		  {
+			"type": "text",
+			"id": "subheading",
+			"label": "Subheading",
+			"default": "Your content title"
+		  },
+		  {
+			"type": "richtext",
+			"id": "note",
+			"label": "Note",
+			"default": "<p>Content description goes here...</p>"
+		  }
+		]
+	  }
+	],
+	"presets": [
+	  {
+		"name": "Contact Information",
+		"settings": {
+          "title": "Our showroom",
+		  "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.</p>"
+        },
+		"blocks": [
+		  {
+			"type": "contentblock",
+			"settings": {
+				"subheading": "Our address",
+				"note": "<p>5th Ave, NY, 10001, USA</p><p><a href=\"https://www.google.com\/maps\/dir\/?api=1&destination=5th+Ave%2C+NY%2C+10001%2C+USA\" title=\"Get directions\"> Get directions<\/a><\/p>"
+			}
+		  },
+		  {
+			"type": "contentblock",
+			"settings": {
+				"subheading": "Open Hours",
+				"note": "<p>Daily 11:00 AM — 6:00 PM</p>"
+			}
+		  },
+		  {
+			"type": "contentblock",
+			"settings": {
+				"subheading": "Contact info",
+				"note": "<p>+1-555-777-1234</p><p>hello-there@example.com</p>"
+			}
+		  }
+		]
+	}]
 }
 {% endschema %}
