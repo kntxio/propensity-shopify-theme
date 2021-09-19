@@ -29,7 +29,7 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    {% comment %}<script src="{{ 'global.js' | asset_url }}" defer="defer"></script>{% endcomment %}
     {{ content_for_header }}
     
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
