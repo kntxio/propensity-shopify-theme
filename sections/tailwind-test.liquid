@@ -26,9 +26,10 @@
     <div class="py-10 px-5 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
       <div class="space-y-6 sm:px-10 md:px-0">
         <blockquote>
-          <p class="quotation"> 
-            No doubt one may quote history to support any cause, as the devil quotes scripture.</p>
-          <footer>— Learned Hand</footer>
+          <p class="text-4xl font-thin mb-8 leading-normal">
+            “Here is a customer testimonial or a quote that exemplifies your business message."
+          </p>
+        <cite>— Learned Hand</cite>
         </blockquote>
       </div>
     </div>
@@ -177,42 +178,3 @@
 	}]
 }
 {% endschema %}
-
-{% stylesheet %}
-.quotation{
-  font-size: 30px;
-  //margin: 0 auto;
-  quotes: "\201C""\201D""\2018""\2019";
-  padding: 10px 20px;
-  line-height: 1.4;
-}
-
-.quotation:before {
-  content: open-quote;
-  display: inline;
-  height: 0;
-  line-height: 0;
-  left: -10px;
-  position: relative;
-  top: 30px;
-  color: #ccc;
-  font-size: 3em;
-}
-.quotation::after {
-  content: close-quote;
-  display: inline;
-  height: 0;
-  line-height: 0;
-  left: 10px;
-  position: relative;
-  top: 35px;
-  color: #ccc;
-  font-size: 3em;
-}
-footer{
-  margin:0;
-  text-align: right;
-  font-size: 1.5em;
-  font-style: italic;
-}
-{% endstylesheet %}
