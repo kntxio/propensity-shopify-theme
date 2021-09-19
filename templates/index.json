@@ -18,10 +18,111 @@
       "settings": {
         "page": "contact"
       }
+    },
+    "16320119050e43fc46": {
+      "type": "multicolumn",
+      "blocks": {
+        "16320119050e43fc46-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-bridge-sitting-in-thick-pink-and-purple-fog.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16320119050e43fc46-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16320119050e43fc46-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1ecb9ca1-a619-47da-b399-0ad65dbb82a2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "ab80568a-027e-4410-9737-8f357adbd0a1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16320119050e43fc46-0",
+        "16320119050e43fc46-1",
+        "16320119050e43fc46-2",
+        "1ecb9ca1-a619-47da-b399-0ad65dbb82a2",
+        "ab80568a-027e-4410-9737-8f357adbd0a1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
+    "16320119128f0bc94b": {
+      "type": "collage",
+      "blocks": {
+        "16320119128f0bc94b-1": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-bag",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "16320119128f0bc94b-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/a-bridge-sitting-in-thick-pink-and-purple-fog.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "16320119128f0bc94b-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "16320119128f0bc94b-1",
+        "16320119128f0bc94b-0",
+        "16320119128f0bc94b-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "1632003809ca094309",
-    "16320041787568bad5"
+    "16320041787568bad5",
+    "16320119050e43fc46",
+    "16320119128f0bc94b"
   ]
 }
