@@ -81,9 +81,11 @@
       }
 
       html {
+    	{% comment %}
         box-sizing: border-box;
-        {% comment %}font-size: 62.5%;{% endcomment %}
+        font-size: 62.5%;
         height: 100%;
+    	{% endcomment %}
       }
 
       body {
@@ -120,12 +122,13 @@
     	word-wrap: break-word;
       }
 
-
+	  {% comment %}	
       @media screen and (min-width: 750px) {
         body {
-          {% comment %}font-size: 1.6rem;{% endcomment %}
+          font-size: 1.6rem;
         }
       }
+      {% endcomment %}
     {% endstyle %}
 
     {% comment %}{{ 'base.css' | asset_url | stylesheet_tag }}{% endcomment %}
