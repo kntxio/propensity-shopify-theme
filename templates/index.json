@@ -9,52 +9,118 @@
         "google_address": "67, Juweel Street, Jukskei Park, Randburg, Johannesburg, 2188"
       }
     },
-    "1632311178c21bd843": {
-      "type": "image-banner",
+    "1632327177651eb55d": {
+      "type": "image-with-text2",
       "blocks": {
-        "1632311178c21bd843-0": {
+        "1632327177651eb55d-0": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Address",
+            "content": "<p>5th Ave, NY, 10001, USA<\/p><p><a href=\"https:\/\/www.google.com\/maps\/dir\/?api=1&destination=5th+Ave%2C+NY%2C+10001%2C+USA\" title=\"Get directions\">Get directions<\/a><\/p>"
+          }
+        },
+        "1632327177651eb55d-1": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Open Hours",
+            "content": "<p>Daily 11:00 AM — 6:00 PM<\/p>"
+          }
+        },
+        "1632327177651eb55d-2": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Contact info",
+            "content": "<p>+1-555-777-1234<\/p><p>hello-there@example.com<\/p>"
+          }
+        },
+        "76edc4d8-37b1-4fbf-bd9f-5c1875deeda7": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
+            "heading": "Image with text"
           }
         },
-        "1632311178c21bd843-1": {
-          "type": "text",
+        "4c7782f2-40cf-4359-90c8-a3208881a5db": {
+          "type": "description",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "heading": "<p>Content description goes here...<\/p>"
           }
         },
-        "1632311178c21bd843-2": {
-          "type": "buttons",
+        "3b1d2cf6-91c8-42ca-ad13-4f5701a3df62": {
+          "type": "contentblock",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "<p>Content description goes here...<\/p>",
+            "content": "<p>Content description goes here...<\/p>"
+          }
+        },
+        "43242d4e-65f5-4c00-9ad4-074aafc9f55b": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "<p>Content description goes here...<\/p>",
+            "content": "<p>Content description goes here...<\/p>"
+          }
+        },
+        "7facfbf6-88c1-40bc-9383-0d46780b8950": {
+          "type": "button",
+          "settings": {
+            "heading": "Test",
+            "link": "shopify:\/\/blogs\/news"
           }
         }
       },
       "block_order": [
-        "1632311178c21bd843-0",
-        "1632311178c21bd843-1",
-        "1632311178c21bd843-2"
+        "1632327177651eb55d-0",
+        "1632327177651eb55d-1",
+        "1632327177651eb55d-2",
+        "76edc4d8-37b1-4fbf-bd9f-5c1875deeda7",
+        "4c7782f2-40cf-4359-90c8-a3208881a5db",
+        "3b1d2cf6-91c8-42ca-ad13-4f5701a3df62",
+        "43242d4e-65f5-4c00-9ad4-074aafc9f55b",
+        "7facfbf6-88c1-40bc-9383-0d46780b8950"
       ],
       "settings": {
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "heading": "Our showroom",
+        "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.<\/p>",
+        "layout": "image-first"
+      }
+    },
+    "163232718516de3f02": {
+      "type": "image-with-text",
+      "blocks": {
+        "163232718516de3f02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "163232718516de3f02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163232718516de3f02-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163232718516de3f02-0",
+        "163232718516de3f02-1",
+        "163232718516de3f02-2"
+      ],
+      "settings": {
+        "height": "adapt",
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "layout": "image_first"
       }
     }
   },
   "order": [
     "1632049774f5de9497",
-    "1632311178c21bd843"
+    "1632327177651eb55d",
+    "163232718516de3f02"
   ]
 }
