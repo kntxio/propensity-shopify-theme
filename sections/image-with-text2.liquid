@@ -1,4 +1,11 @@
-<div class="relative py-12 bg-white" aria-labelledby="sectionid">
+{% liquid
+   assign labelledBy = ''
+   if section.settings.heading != blank
+      assign labelledBy = sectionid | append: '.heading'
+   endif
+%}
+
+<div class="relative py-12 bg-white" aria-labelledby="{{ labelledBy }}">
   <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
     <div class="lg:mt-0 lg:col-start-1">
       <div class="lg:px-0 lg:m-0 lg:relative lg:h-full">
@@ -7,18 +14,23 @@
     </div>
     <div class="py-10 px-5 max-w-xl mx-auto sm:px-6 lg:py-48 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
       <div class="space-y-8 sm:px-10 md:px-0">
-        <h2 id="sectionid" class="text-5xl">
-          Fresh and delicious food
+        {% if section.settings.heading != blank %}
+        <h2 id="{{ labelledBy }}" class="text-5xl" {{ block.shopify_attributes }}>
+          {{ section.settings.heading | escape }}
         </h2>
+        {% endif %}
         <p class="text-lg italic">
           All of our products are made as natural as possible with the safest ingredients
         </p>
+        
+        {%- for block in section.blocks -%}
         <p class="text-lg">
           We pride ourselves on bringing our award-winning dishes to our customers. All of your favorite seasonal meals can be ordered online with pick up or delivery available. Order as much or as little as you like with great discounts for big orders. Please contact us if you have any questions.
         </p>
         <a href="#" class="inline-flex bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-white">
           Get started
         </a>
+        {% endfor %}
       </div>
     </div>
   </div>
