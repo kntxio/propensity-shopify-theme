@@ -34,9 +34,9 @@
         	  </h2>
         	  {% endif %}
         	{%- when 'description' -%}
-        	  {% if block.settings.description != blank %}
+        	  {% if block.settings.text != blank %}
         	  <div class="text-lg italic" {{ block.shopify_attributes }}>
-          	  	{{ block.settings.description }}
+          	  	{{ block.settings.text }}
         	  </div>
         	  {% endif %}	
         	{%- when 'content' -%}
