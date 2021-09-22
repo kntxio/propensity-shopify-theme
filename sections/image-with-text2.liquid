@@ -47,8 +47,8 @@
         	  {% endif %}
        		{%- when 'button' -%}
         	  {%- if block.settings.heading != blank -%}
-                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="inline-flex bg-indigo-600 hover:bg-indigo-700 px-4 py-2 ml-3 text-white {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
+                <a{% if block.settings.heading != blank %} href="{{ block.settings.link }}"{% endif %} class="inline-flex bg-indigo-600 hover:bg-indigo-700 px-4 py-2 ml-3 text-white {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                  {{ block.settings.heading | escape }}
                 </a>
               {%- endif -%}
           {% endcase %}
