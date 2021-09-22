@@ -38,7 +38,7 @@
           {% endcase %}
         {% endfor %}
         
-        <div class="mt-8 flex justify-center
+        <div class="flex justify-center">
         {%- for block in section.blocks -%}
           {% case block.type %}
         	{%- when 'button' -%}
@@ -49,6 +49,7 @@
               {%- endif -%}
           {% endcase %}
         {% endfor %}
+        </div>
       </div>
     </div>
   </div>
