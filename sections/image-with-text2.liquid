@@ -161,8 +161,7 @@
         <div class="space-y-2">
           <h3 class="text-xl font-bold">Our address</h3>
           <p class="text-lg -mt-8">
-              5th Ave, NY, 10001, USA
-              Get directions
+              131 Greene St, New York, NY 10012, United States
           </p>
         </div>
         <div class="space-y-2">
@@ -195,9 +194,9 @@
 	"settings": [
 	  {
 		"type": "text",
-		"id": "title",
+		"id": "heading",
 		"label": "Title",
-		"default": "Our showroom"
+		"default": "Image with text"
 	  },
 	  {
 		"type": "richtext",
@@ -206,60 +205,95 @@
 		"default": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.</p>"
 	  },
 	  {
+		"type": "image_picker",
+		"id": "image",
+		"label": "Image",
+		"info": "Suggested image sizes"
+	  },
+	  {
 		"type": "select",
 		"id": "layout",
         "label": "Layout",
-		"default": "imageleft",
+		"default": "image-first",
         "options": [
 		  {
-			"value": "map-left",
-			"label": "Map Left"
+			"value": "image-first",
+			"label": "Image first"
 		  },
 		  {
-			"value": "mapright",
-			"label": "Map Right"
-		  },
-		  {
-			"value": "imageleft",
+			"value": "image-left",
 			"label": "Image Left"
 		  },
 		  {
-			"value": "imageright",
+			"value": "image-right",
 			"label": "Image Right"
 		  },
 	 	  {
-			"value": "simple",
-			"label": "Simple"
+			"value": "image-after-title",
+			"label": "Image after title"
+		  }
+		]
+	  }
+	],
+	"blocks": [
+	  {
+		"type": "heading",
+		"name": "Heading",
+		"limit": 1,
+		"settings": [
+		  {
+			"type": "text",
+			"id": "heading",
+			"label": "Heading",
+			"default": "Image with text"
 		  }
 		]
 	  },
 	  {
-		"type": "header",
-		"content": "Google Map Settings"
+		"type": "description",
+		"name": "Description",
+		"limit": 1,
+		"settings": [
+		  {
+			"type": "richtext",
+			"id": "heading",
+			"label": "Note",
+			"default": "<p>Content description goes here...</p>"
+		  }
+		]
 	  },
-	  {
-  		"type": "textarea",
-  		"id": "google_address",
-  		"label": "Google maps address"
-	  }
-	],
- 	"max_blocks": 10,
-	"blocks": [
 	  {
 		"type": "contentblock",
 		"name": "Content",
 		"settings": [
 		  {
 			"type": "text",
-			"id": "subheading",
-			"label": "Subheading",
-			"default": "Your content title"
-		  },
-		  {
-			"type": "richtext",
-			"id": "note",
+			"id": "heading",
 			"label": "Note",
 			"default": "<p>Content description goes here...</p>"
+		  },
+		  {
+			"type": "text",
+			"id": "content",
+			"label": "Content",
+			"default": "<p>Content description goes here...</p>"
+		  }
+		]
+	  },
+	  {
+		"type": "button",
+		"name": "Button",
+		"settings": [
+		  {
+			"type": "text",
+			"id": "heading",
+			"label": "Button label",
+			"default": "<p>Content description goes here...</p>"
+		  },
+		  {
+			"type": "url",
+			"id": "link",
+			"label": "Button link"
 		  }
 		]
 	  }
@@ -268,29 +302,29 @@
 	  {
 		"name": "Contact Information",
 		"settings": {
-          "title": "Our showroom",
+          "heading": "Our showroom",
 		  "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.</p>"
         },
 		"blocks": [
 		  {
 			"type": "contentblock",
 			"settings": {
-				"subheading": "Our address",
-				"note": "<p>5th Ave, NY, 10001, USA</p><p><a href=\"https://www.google.com\/maps\/dir\/?api=1&destination=5th+Ave%2C+NY%2C+10001%2C+USA\" title=\"Get directions\"> Get directions<\/a><\/p>"
+				"heading": "Address",
+				"content": "<p>5th Ave, NY, 10001, USA</p><p><a href=\"https://www.google.com\/maps\/dir\/?api=1&destination=5th+Ave%2C+NY%2C+10001%2C+USA\" title=\"Get directions\">Get directions</a></p>"
 			}
 		  },
 		  {
 			"type": "contentblock",
 			"settings": {
-				"subheading": "Open Hours",
-				"note": "<p>Daily 11:00 AM — 6:00 PM</p>"
+				"heading": "Open Hours",
+				"content": "<p>Daily 11:00 AM — 6:00 PM</p>"
 			}
 		  },
 		  {
 			"type": "contentblock",
 			"settings": {
-				"subheading": "Contact info",
-				"note": "<p>+1-555-777-1234</p><p>hello-there@example.com</p>"
+				"heading": "Contact info",
+				"content": "<p>+1-555-777-1234</p><p>hello-there@example.com</p>"
 			}
 		  }
 		]
