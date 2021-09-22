@@ -1,8 +1,13 @@
 {% liquid
    assign labelledBy = ''
-   if section.settings.heading != blank
-      assign labelledBy = sectionid | append: '.heading'
-   endif
+   for block in section.blocks
+     case block.type
+      	when 'heading'
+        	if block.settings.heading != blank
+            	assign labelledBy = sectionid | append: '.heading'
+   			endif
+     endcase
+   endfor
 %}
 
 <div class="relative py-12 bg-white" aria-labelledby="{{ labelledBy }}">
