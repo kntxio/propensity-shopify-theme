@@ -19,9 +19,11 @@
           {{ section.settings.heading | escape }}
         </h2>
         {% endif %}
+        {% if section.settings.description != blank %}
         <p class="text-lg italic">
-          All of our products are made as natural as possible with the safest ingredients
+          {{ section.settings.description }}
         </p>
+        {% endif %}
         
         {%- for block in section.blocks -%}
         <p class="text-lg">
