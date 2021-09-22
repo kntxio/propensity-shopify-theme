@@ -14,6 +14,10 @@
   {%- when "image-first", "image-after-title" -%}
     <div class="relative py-12 bg-white" aria-labelledby="sectionid">
       <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="">
+      		<img class="" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="About our products">
+    	</div>
          
         {%- for block in section.blocks -%}
           {% case block.type %}
