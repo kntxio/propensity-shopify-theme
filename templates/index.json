@@ -27,6 +27,7 @@
         },
         "1632350716fc1d294b-2": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "Talk about your brand",
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
@@ -38,13 +39,21 @@
             "heading": "Collections",
             "link": "shopify:\/\/collections"
           }
+        },
+        "1c26526b-67c6-400d-8ae2-632970789abe": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1632350716fc1d294b-0",
         "1632350716fc1d294b-1",
         "1632350716fc1d294b-2",
-        "1632350716fc1d294b-3"
+        "1632350716fc1d294b-3",
+        "1c26526b-67c6-400d-8ae2-632970789abe"
       ],
       "settings": {
         "layout": "image-first"
