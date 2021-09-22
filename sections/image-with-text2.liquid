@@ -26,12 +26,16 @@
         {% endif %}
         
         {%- for block in section.blocks -%}
-        <p class="text-lg">
-          We pride ourselves on bringing our award-winning dishes to our customers. All of your favorite seasonal meals can be ordered online with pick up or delivery available. Order as much or as little as you like with great discounts for big orders. Please contact us if you have any questions.
-        </p>
-        <a href="#" class="inline-flex bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-white">
-          Get started
-        </a>
+          {% case block.type %}
+        	{%- when 'heading' -%}
+        	  <p class="text-lg">
+          		We pride ourselves on bringing our award-winning dishes to our customers. All of your favorite seasonal meals can be ordered online with pick up or delivery available. Order as much or as little as you like with great discounts for big orders. Please contact us if you have any questions.
+        	  </p>
+        	{%- when 'button' -%}
+        	  <a href="#" class="inline-flex bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-white">
+          		Get started
+        	  </a>
+          {% endcase %}
         {% endfor %}
       </div>
     </div>
