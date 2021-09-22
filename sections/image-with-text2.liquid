@@ -11,7 +11,7 @@
 %}
 
 {% case section.settings.layout %}
-  {%- when "image-left", "image-right" -%}
+  {%- when "image-first", "image-after-title" -%}
     <div class="relative py-12 bg-white" aria-labelledby="{{ labelledBy }}">
       <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
         <div class="lg:mt-0 lg:col-start-1">
@@ -113,7 +113,7 @@
 		"type": "select",
 		"id": "layout",
         "label": "Layout",
-		"default": "image-left",
+		"default": "image-first",
         "options": [
 		  {
 			"value": "image-first",
