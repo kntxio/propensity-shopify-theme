@@ -2,15 +2,114 @@
   "sections": {
     "1632049774f5de9497": {
       "type": "tailwind-test",
+      "disabled": true,
       "settings": {
         "title": "Our showroom",
         "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.<\/p>",
         "layout": "imageleft",
-        "google_address": ""
+        "google_address": "67, Juweel Street, Jukskei Park, Randburg, Johannesburg, 2188"
+      }
+    },
+    "1632352866dc956ec5": {
+      "type": "image-with-text2",
+      "blocks": {
+        "1632352866dc956ec5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1632352866dc956ec5-1": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1632352866dc956ec5-2": {
+          "type": "content",
+          "settings": {
+            "heading": "Talk about your brand",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1632352866dc956ec5-3": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
+        },
+        "4489d5bb-fed2-4f79-8272-28ff313a3b68": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
+        },
+        "c01659b7-bcbd-49ff-adac-a52c26a79a1c": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1632352866dc956ec5-0",
+        "1632352866dc956ec5-1",
+        "1632352866dc956ec5-2",
+        "1632352866dc956ec5-3",
+        "4489d5bb-fed2-4f79-8272-28ff313a3b68",
+        "c01659b7-bcbd-49ff-adac-a52c26a79a1c"
+      ],
+      "settings": {
+        "layout": "image-right"
+      }
+    },
+    "16323531727ac5dc54": {
+      "type": "image-with-text2",
+      "blocks": {
+        "16323531727ac5dc54-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16323531727ac5dc54-1": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16323531727ac5dc54-2": {
+          "type": "content",
+          "settings": {
+            "heading": "Talk about your brand",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16323531727ac5dc54-3": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16323531727ac5dc54-0",
+        "16323531727ac5dc54-1",
+        "16323531727ac5dc54-2",
+        "16323531727ac5dc54-3"
+      ],
+      "settings": {
+        "layout": "image-above"
       }
     }
   },
   "order": [
-    "1632049774f5de9497"
+    "1632049774f5de9497",
+    "1632352866dc956ec5",
+    "16323531727ac5dc54"
   ]
 }
