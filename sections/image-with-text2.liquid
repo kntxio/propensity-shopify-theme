@@ -11,7 +11,7 @@
 %}
 
 {% case section.settings.layout %}
-  {%- when "image-first", "image-after-title" -%}
+  {%- when "image-above" -%}
     <div class="relative py-12 bg-white" aria-labelledby="sectionid">
       <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 space-y-8">
         
@@ -109,15 +109,11 @@
 		"type": "select",
 		"id": "layout",
         "label": "Layout",
-		"default": "image-first",
+		"default": "image-left",
         "options": [
 		  {
-			"value": "image-first",
-			"label": "Image first"
-		  },
-		  {
-			"value": "image-after-title",
-			"label": "Image after title"
+			"value": "image-above",
+			"label": "Image above"
 		  },
 		  {
 			"value": "image-left",
