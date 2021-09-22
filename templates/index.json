@@ -35,8 +35,8 @@
         "1632350716fc1d294b-3": {
           "type": "button",
           "settings": {
-            "heading": "Button label",
-            "link": ""
+            "heading": "Collections",
+            "link": "shopify:\/\/collections"
           }
         }
       },
