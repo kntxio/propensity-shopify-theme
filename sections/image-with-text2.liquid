@@ -20,7 +20,7 @@
         </h2>
         {% endif %}
         {% if section.settings.description != blank %}
-        <p class="text-lg italic">
+        <p class="text-lg italic" {{ block.shopify_attributes }}>
           {{ section.settings.description }}
         </p>
         {% endif %}
