@@ -8,9 +8,46 @@
         "layout": "imageleft",
         "google_address": "67, Juweel Street, Jukskei Park, Randburg, Johannesburg, 2188"
       }
+    },
+    "1632329020e706f702": {
+      "type": "image-with-text2",
+      "blocks": {
+        "1632329020e706f702-0": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Address",
+            "content": "<p>5th Ave, NY, 10001, USA<\/p><p><a href=\"https:\/\/www.google.com\/maps\/dir\/?api=1&destination=5th+Ave%2C+NY%2C+10001%2C+USA\" title=\"Get directions\">Get directions<\/a><\/p>"
+          }
+        },
+        "1632329020e706f702-1": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Open Hours",
+            "content": "<p>Daily 11:00 AM — 6:00 PM<\/p>"
+          }
+        },
+        "1632329020e706f702-2": {
+          "type": "contentblock",
+          "settings": {
+            "heading": "Contact info",
+            "content": "<p>+1-555-777-1234<\/p><p>hello-there@example.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1632329020e706f702-0",
+        "1632329020e706f702-1",
+        "1632329020e706f702-2"
+      ],
+      "settings": {
+        "heading": "Our showroom",
+        "description": "<p>To fully appreciate the elegance of our products, we encourage you to visit our showroom.<\/p>",
+        "layout": "image-first"
+      }
     }
   },
   "order": [
-    "1632049774f5de9497"
+    "1632049774f5de9497",
+    "1632329020e706f702"
   ]
 }
