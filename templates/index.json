@@ -49,7 +49,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/dom-hill-nimElTcTNyY-unsplash.jpg",
         "layout": "image-left",
-        "bg_color": "#000000"
+        "bg_color": "#e22120"
       }
     },
     "1632353176117d31bf": {
@@ -135,12 +135,44 @@
         "layout": "image-above",
         "bg_color": "#000000"
       }
+    },
+    "16323911648e2eeb1b": {
+      "type": "newsletter",
+      "blocks": {
+        "16323911648e2eeb1b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "16323911648e2eeb1b-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16323911648e2eeb1b-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16323911648e2eeb1b-0",
+        "16323911648e2eeb1b-1",
+        "16323911648e2eeb1b-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "1632049774f5de9497",
     "16323531727ac5dc54",
     "1632353176117d31bf",
-    "1632382236cbb35bc8"
+    "1632382236cbb35bc8",
+    "16323911648e2eeb1b"
   ]
 }
