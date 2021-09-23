@@ -65,7 +65,7 @@
                 src="{{ section.settings.image | img_url: '1500x' }}"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
                 alt="{{ section.settings.image.alt | escape }}"
-                class="w-full shadow-xl lg:h-full {% if section.settings.layout == "image-left" %} lg:right-0{% else %} lg:left-0{% endif %}"
+                class="w-full shadow-xl lg:absolute lg:h-full lg:w-auto lg:max-w-none {% if section.settings.layout == "image-left" %} lg:right-0{% else %} lg:left-0{% endif %}"
                 loading="lazy"
                 width="{{ section.settings.image.width }}"
                 height="{{ section.settings.image.height }}"
