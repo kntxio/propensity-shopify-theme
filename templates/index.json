@@ -47,6 +47,7 @@
         "16323531727ac5dc54-3"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/dom-hill-nimElTcTNyY-unsplash.jpg",
         "layout": "image-left",
         "bg_color": "#000000"
       }
@@ -88,6 +89,7 @@
         "1632353176117d31bf-3"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/kyle-smith-tlowJ-oYAjU-unsplash.jpg",
         "layout": "image-right",
         "bg_color": "#000000"
       }
@@ -129,6 +131,7 @@
         "1632382236cbb35bc8-3"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/dom-hill-nimElTcTNyY-unsplash.jpg",
         "layout": "image-above",
         "bg_color": "#000000"
       }
