@@ -132,6 +132,12 @@
     </div>
 {% endcase %}
 
+{% stylesheet %}
+div#shopify-section-{% section.id %} {
+	background-color: {% section.settings.bg_color %}
+}
+{% endstylesheet %}
+
 {% schema %}
 {
 	"name": "Image with Text",
