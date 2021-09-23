@@ -71,7 +71,7 @@
                 height="{{ section.settings.image.height }}"
               >
             {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg bg-gray-100' }}
             {%- endif -%}
             {%- comment -%}
             	<img class="w-full shadow-xl lg:absolute {% if section.settings.layout == "image-left" %} lg:right-0{% else %} lg:left-0{% endif %} lg:h-full lg:w-auto lg:max-w-none" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=662&amp;q=80" alt="About our products">
