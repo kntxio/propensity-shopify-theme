@@ -48,7 +48,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/dom-hill-nimElTcTNyY-unsplash.jpg",
-        "layout": "image-right",
+        "layout": "image-left",
         "bg_color": "#fdfecb"
       }
     },
