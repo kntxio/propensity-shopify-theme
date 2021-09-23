@@ -54,7 +54,27 @@
       <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24 {% if section.settings.layout == "image-left" %} lg:col-start-1{% else %} lg:col-start-2{% endif %}">
         <div class="lg:mt-0 {% if section.settings.layout == "image-left" %} lg:col-start-1{% else %} lg:col-start-2{% endif %}">
           <div class="lg:px-0 lg:m-0 lg:relative lg:h-full">
-            <img class="w-full shadow-xl lg:absolute {% if section.settings.layout == "image-left" %} lg:right-0{% else %} lg:left-0{% endif %} lg:h-full lg:w-auto lg:max-w-none" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=662&amp;q=80" alt="About our products">
+            {%- if section.settings.image != blank -%}
+              <img
+                srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+                  {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+                  {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+                  {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                  {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
+                  {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}"
+                src="{{ section.settings.image | img_url: '1500x' }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ section.settings.image.alt | escape }}"
+                loading="lazy"
+                width="{{ section.settings.image.width }}"
+                height="{{ section.settings.image.height }}"
+              >
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            {%- comment -%}
+            	<img class="w-full shadow-xl lg:absolute {% if section.settings.layout == "image-left" %} lg:right-0{% else %} lg:left-0{% endif %} lg:h-full lg:w-auto lg:max-w-none" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=662&amp;q=80" alt="About our products">
+          	{%- endcomment -%}
           </div>
         </div>
         <div class="py-10 px-5 max-w-xl mx-auto sm:px-6 lg:py-48 lg:max-w-none lg:mx-0 lg:px-0 {% if section.settings.layout == "image-left" %} lg:col-start-2{% else %} lg:col-start-1{% endif %}">
