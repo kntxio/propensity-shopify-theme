@@ -38,13 +38,21 @@
             "heading": "Button label",
             "link": ""
           }
+        },
+        "b9ee908c-59bb-475f-95c5-307a6c973587": {
+          "type": "button",
+          "settings": {
+            "heading": "Button label",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "16323531727ac5dc54-0",
         "16323531727ac5dc54-1",
         "16323531727ac5dc54-2",
-        "16323531727ac5dc54-3"
+        "16323531727ac5dc54-3",
+        "b9ee908c-59bb-475f-95c5-307a6c973587"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/dom-hill-nimElTcTNyY-unsplash.jpg",
