@@ -12,7 +12,7 @@
 
 {% case section.settings.layout %}
   {%- when "image-above" -%}
-    <div class="relative py-12 bg-white" aria-labelledby="sectionid">
+    <div class="relative py-12 bg-white" style="background:{{ section.settings.bg_color }}" aria-labelledby="sectionid">
       <div class="max-w-2xl mx-auto text-center px-4 sm:px-6 lg:px-8 space-y-8">
         
         {%- if section.settings.image != blank -%}
