@@ -162,8 +162,6 @@
     {% comment %}{% section 'header' %}{% endcomment %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
-      
-      {% section 'back-to-top' %}
     </main>
 
     {% comment %}{% section 'footer' %}{% endcomment %}
@@ -171,6 +169,8 @@
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
+    
+    {% section 'back-to-top' %}
 
     <script>
       window.routes = {
