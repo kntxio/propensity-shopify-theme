@@ -153,7 +153,7 @@
   </head>
 
   {% comment %}<body class="gradient">{% endcomment %}
-  <body class="antialiased">
+  <body id="top" class="antialiased">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -162,6 +162,8 @@
     {% comment %}{% section 'header' %}{% endcomment %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+      
+      {% section 'back-to-top' %}
     </main>
 
     {% comment %}{% section 'footer' %}{% endcomment %}
