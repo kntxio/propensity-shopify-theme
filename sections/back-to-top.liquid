@@ -1,129 +1,85 @@
+{% comment %}
+  Reduce below value if you need the back to the top button to appear higher up on the page.
+  That value is in pixels.
+{% endcomment %}
+{% assign vertical_offset_for_trigger = 300 %}
+
+{% comment %}
+  Vertical offset from bottom of browser for the position of the button.
+{% endcomment %}
+{% assign position_from_bottom = '6em' %}
+
+<a id="BackToTop" href="#" title="Back to the top" class="back-to-top hide">
+  <span>Back to the top</span> <i class="fa fa-arrow-circle-o-up fa-2x"></i>
+</a>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: {{ position_from_bottom }};
+    right: 0px;
+    text-decoration: none;
+    color: #999;
+    background-color: #eee;
+    font-size: 16px;
+    padding: 0.3em;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    z-index: 60000;
+  }
+  .back-to-top i {
+    vertical-align: middle;
+  }
+  .back-to-top span {
+    padding-left: 0.5em;
+  }
+  .back-to-top i + span {
+    padding-left: 0;
+  }
+  .back-to-top:hover {
+    text-decoration: none;
+    color: #555;
+  }
+  .hide {
+    display: none!important;
+  }
+</style>
+
+<script>
+    (function() {
+    function trackScroll() {
+        var scrolled = window.pageYOffset;
+        var coords = {{ vertical_offset_for_trigger }};
+
+        if (scrolled > coords) {
+        goTopBtn.classList.remove('hide');
+        }
+        if (scrolled < coords) {
+        goTopBtn.classList.add('hide');
+        }
+    }
+
+    function backToTop() {
+        if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+        }
+    }
+
+    var goTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+    })();
+</script>
+
 {% schema %}
   {
     "name": "Back to top",
     "settings": []
   }
 {% endschema %}
-
-{% stylesheet %}
-// Learn about this technique:
-// @link https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
-
-$color: #254568;
-$main-width: 50rem;
-
-// How far of a scroll travel within <main> prior to the
-// link appearing
-$scrollLength: 100vh;
-
-* {
-  box-sizing: border-box;
-}
-
-// Smooth scrolling IF user doesn't have a preference due to motion sensitivities
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-main {
-  // leave room for the "scroll track"
-  padding: 0 3rem;
-  // required to make sure the `absolute` positioning of
-  // the anchor wrapper is indeed `relative` to this element vs. the body
-  position: relative;
-  max-width: $main-width;
-  margin: 2rem auto;
-
-  // Optional, clears margin if last element is a block item
-  *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.back-to-top-wrapper {
-  // uncomment to visualize "track"
-  // outline: 1px solid red;
-  position: absolute;
-  top: $scrollLength;
-  right: 0.25rem;
-  bottom: -5em;
-  width: 3em;
-  pointer-events: none;
-}
-
-.back-to-top-link {
-  // `fixed` is fallback
-  position: fixed;
-  // preferred positioning, requires prefixing for most support, and not supported on Safari
-  // @link https://caniuse.com/#search=position%3A%20sticky
-  position: sticky;
-  // reinstate clicks
-  pointer-events: all;
-  // achieves desired positioning within the viewport
-  // relative to the top of the viewport once `sticky` takes over, or always if `fixed` fallback is used
-  top: calc(100vh - 5rem);
-
-  // basic styling
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  padding: 0.25rem;
-
-  // "pretty" styles, including states
-  border: 1px solid $color;
-  background-color: scale-color($color, $lightness: 85%);
-  transition: transform 80ms ease-in;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px scale-color($color, $lightness: 35%);
-  }
-}
-
-body {
-  font-family: "Baloo 2", sans-serif;
-  min-height: 100vh;
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto auto;
-  // Remove default browser margin
-  margin: 0;
-}
-
-header,
-footer {
-  display: grid;
-  place-items: center;
-  background-color: $color;
-  color: #fff;
-}
-
-header {
-  background-image: url(https://images.unsplash.com/photo-1513628253939-010e64ac66cd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-p {
-  font-size: 1.125rem;
-  line-height: 1.5;
-}
-{% endstylesheet %}
