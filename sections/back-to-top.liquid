@@ -41,6 +41,15 @@
   }
 </style>
 
+
+{% schema %}
+  {
+    "name": "Back to top",
+    "settings": []
+  }
+{% endschema %}
+
+{% javascript %}
 <script>
     (function() {
     function trackScroll() {
@@ -73,10 +82,4 @@
     goTopBtn.addEventListener('click', backToTop);
     })();
 </script>
-
-{% schema %}
-  {
-    "name": "Back to top",
-    "settings": []
-  }
-{% endschema %}
+{% endjavascript %}
