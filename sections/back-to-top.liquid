@@ -56,22 +56,20 @@
         var coords = {{ vertical_offset_for_trigger_px }};
 
         if (scrolled > coords) {
-        goTopBtn.classList.remove('hide');
+        	goTopBtn.classList.remove('hide');
         }
         if (scrolled < coords) {
-        goTopBtn.classList.add('hide');
+        	goTopBtn.classList.add('hide');
         }
     }
 
     function backToTop() {
         if (window.pageYOffset > 0) {
           window.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: 'smooth'
-});
-        //window.scrollBy(0, -80);
-        //setTimeout(backToTop, 0);
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
         }
     }
 
