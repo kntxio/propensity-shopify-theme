@@ -1,7 +1,7 @@
 {% assign vertical_offset_for_trigger_px = 300 %}
 {% assign position_from_bottom = '6em' %}
 
-<a id="BackToTop" href="#" title="Back to the top" class="back-to-top hide">
+<a id="BackToTop" href="#" title="Back to the top" class="back-to-top hide" style="display: inline;">
   <span>Back to the top</span> <i class="fa fa-arrow-circle-o-up fa-2x"></i>
 </a>
 
@@ -58,11 +58,11 @@
     function backToTop() {
         if (window.pageYOffset > 0) {
           window.scrollTo({
-  top: 100,
-  left: 100,
+  top: 0,
+  left: 0,
   behavior: 'smooth'
 });
-        window.scrollBy(0, -80);
+        //window.scrollBy(0, -80);
         setTimeout(backToTop, 0);
         }
     }
