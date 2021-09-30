@@ -35,7 +35,7 @@
         "16323531727ac5dc54-3": {
           "type": "button",
           "settings": {
-            "heading": "Button label",
+            "heading": "Link to product",
             "link": "shopify:\/\/products\/black-leather-bag"
           }
         },
